@@ -43,12 +43,6 @@ const appointmentSchema = new mongoose.Schema({
     required: true,
     enum: ["Male", "Female"],
   },
-  password: {
-    type: String,
-    required: true,
-    minLength: [8, "Password should be at least 8 characters long."],
-    select: false,
-  },
   appointment_date: {
     type: String,
     required: true,
@@ -69,7 +63,6 @@ const appointmentSchema = new mongoose.Schema({
   },
   hasVisited: {
     type: Boolean,
-    required: true,
     default: false,
   },
   doctorId: {
@@ -87,4 +80,4 @@ const appointmentSchema = new mongoose.Schema({
   },
 });
 
-export default Appointment = mongoose.model("Appointment", appointmentSchema);
+export const Appointment = mongoose.model("Appointment", appointmentSchema);
