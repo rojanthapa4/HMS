@@ -1,0 +1,122 @@
+.biography-section {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.biography-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.biography-image {
+  flex: 1;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.bio-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.biography-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1f2937;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bio-paragraph {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.highlight-box {
+  background-color: #eff6ff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid #3b82f6;
+  margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .biography-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .bio-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .biography-section {
+    padding: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .bio-paragraph {
+    font-size: 1rem;
+  }
+
+  .highlight-box {
+    padding: 1rem;
+  }
+}
+
+/* Add these styles to existing CSS */
+.highlight-box {
+  background-color: #f0f7ff;
+  border-left: 4px solid #1e3a8a;
+}
+
+.specialty-list {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: #1e3a8a;
+}
+
+.specialty-list li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}

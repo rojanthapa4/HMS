@@ -1,0 +1,122 @@
+/* Footer Styles */
+footer {
+  padding: 4rem 2rem 2rem;
+  background: #f8fafc;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 0 auto 3rem;
+  max-width: 1200px;
+}
+
+footer .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .logo-img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+footer h4 {
+  font-size: 1.125rem;
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul a {
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #4299e1;
+}
+
+/* Hours Section */
+footer .content div:nth-child(3) ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.25rem 0;
+}
+
+footer .content div:nth-child(3) span:first-child {
+  font-weight: 500;
+  color: #1a365d;
+}
+
+footer .content div:nth-child(3) span:last-child {
+  color: #718096;
+}
+
+/* Contact Section */
+footer .content div:last-child div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+footer .content div:last-child svg {
+  font-size: 1.25rem;
+  color: #4299e1;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  footer .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 3rem 1.5rem;
+  }
+
+  footer .content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  footer .content div:nth-child(3) ul li {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  footer .content div:last-child div {
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,13 @@
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.error-fallback {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
