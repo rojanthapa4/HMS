@@ -15,7 +15,6 @@ import Footer from "./components/Footer";
 
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } = useContext(Context);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -25,24 +24,15 @@ const App = () => {
           { withCredentials: true }
         );
         setIsAuthenticated(true);
-        setUser(data.user);
+        setUser(response.data.user);
       } catch (error) {
-        if (error.response?.status !== 401) {
-          toast.error("Failed to fetch user data");
-        }
         setIsAuthenticated(false);
         setUser({});
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchUser();
-  }, []);
-
-  if (loading) {
-    return <div className="loading-spinner">Loading...</div>;
-  }
+  }, [isAuthenticated]);
 
   return (
     <Router>

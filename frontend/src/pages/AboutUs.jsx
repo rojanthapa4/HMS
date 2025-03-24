@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Biography from "../components/Biography";
 import "../styles/About.css";
 
-const AboutUs = ({ title }) => {
+const AboutUs = () => {
   return (
     <>
       <main className="about-page">

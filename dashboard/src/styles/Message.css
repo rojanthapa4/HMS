@@ -1,0 +1,112 @@
+/* .messages {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.messages h1 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.messages .banner {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.messages .banner .card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.messages .banner .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.messages .banner .card div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.messages .banner .card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.messages .banner .card p span {
+  font-weight: 400;
+  color: #555;
+  flex: 1;
+  word-break: break-word;
+}
+
+.messages .banner .card p:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.messages .banner .card p:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.messages .banner > h1 {
+  color: #999;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 4rem 0;
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+.messages .banner .card p:last-child span {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .messages {
+    padding: 1.5rem;
+  }
+
+  .messages h1 {
+    font-size: 2rem;
+  }
+
+  .messages .banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .messages {
+    padding: 1rem;
+  }
+
+  .messages .banner .card {
+    padding: 1rem;
+  }
+
+  .messages .banner .card p {
+    font-size: 0.9rem;
+  }
+} */

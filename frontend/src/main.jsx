@@ -1,7 +1,7 @@
 import React, { createContext, StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
-import ErrorBoundary from "./components/ErrorBoundary"; // Adjusted path
+import ErrorBoundary from "./components/ErrorBoundary";
 
 // Create Context
 export const Context = createContext({
